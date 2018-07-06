@@ -359,6 +359,18 @@ var Signatures = []Signature{
     description: "Tunnelblick VPN configuration file",
     comment:     "",
   },
+    SimpleSignature{
+    part:        PartFilename,
+    match:       "db_connections.py",
+    description: "Sensitive connection config",
+    comment:     "DB connection string",
+  },
+     SimpleSignature{
+    part:        PartFilename,
+    match:       "db_connections.py",
+    description: "Sensitive connection config",
+    comment:     "DB connection string",
+  },
   SimpleSignature{
     part:        PartFilename,
     match:       "Favorites.plist",
