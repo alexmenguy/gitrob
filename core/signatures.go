@@ -174,6 +174,12 @@ var Signatures = []Signature{
     comment:     "Log files can contain secret HTTP endpoints, session IDs, API keys and other goodies",
   },
   SimpleSignature{
+    part:        PartFilename,
+    match:       "applicationConfig.json",
+    description: "Potential sensitive file",
+    comment:     "",
+  },
+  SimpleSignature{
     part:        PartExtension,
     match:       ".pkcs12",
     description: "Potential cryptographic key bundle",
