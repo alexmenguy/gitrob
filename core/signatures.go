@@ -295,6 +295,18 @@ var Signatures = []Signature{
   },
   SimpleSignature{
     part:        PartFilename,
+    match:       "env.json",
+    description: "Potential CS configuration file",
+    comment:     "Can contain credentials",
+  },
+  SimpleSignature{
+    part:        PartFilename,
+    match:       "server.json",
+    description: "Potential CS configuration file",
+    comment:     "Can contain credentials",
+  },
+  SimpleSignature{
+server part:        PartFilename,
     match:       "omniauth.rb",
     description: "OmniAuth configuration file",
     comment:     "The OmniAuth configuration file can contain client application secrets",
@@ -341,6 +353,12 @@ var Signatures = []Signature{
     description: "Potential Jenkins credentials file",
     comment:     "",
   },
+  SimpleSignature{
+    part:        PartFilename,
+    match:       "application.conf",
+    description: "Potential CS configuration file",
+    comment:     "",
+  },  
   SimpleSignature{
     part:        PartExtension,
     match:       ".kwallet",
